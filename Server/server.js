@@ -1,8 +1,11 @@
-var express = require('express');
+const express = require('express');
+require('dotenv').config();
+const bodyparser = require('body-parser');
+
 var app = express();
-app.get('/game',(req,res)=>{
-    res.sendFile(__dirname+'/service.html');
-})
-app.use('/emi',express.static('../client'));
-app.listen(3030)
-// scrollspy
+app.use('/emi',express.static('../Client'));
+app.use(bodyparser.urlencoded({extended:true}));
+app.use(bodyparser.json());
+
+app.listen(process.env.PORT,()=>console.log('emicon server is live : '+process.env.PORT));
+

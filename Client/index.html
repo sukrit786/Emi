@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Emicon Advisory Services LLP</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  
+  <!--Angular and Angular Route-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.22/angular-ui-router.js" integrity="sha256-k47aHmEF6j3+WT+VTogy7tt1XVtPPHxPW6EGE3SKmoM=" crossorigin="anonymous"></script>
+  <!-- Angular UI-BootTRAP -->
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script> -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
+  <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body ng-app="myApp">
+
+  <!-- NAV BAR STARTS IN HERE -->
+    <header id="header" >
+        <div id="topbar">
+         <div class="container">
+           <div class="social-links">
+             <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+             <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+             <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+             <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+           </div>
+         </div>
+       </div>
+   
+       <div class="container">
+   
+         <div class="logo float-left">
+           <a href="#/" class="scrollto"><img src="img/nayaicon.png" height="50px" alt="logo" class="img-fluid"></a>
+         </div>
+   
+         <nav class="main-nav float-right d-none d-lg-block">
+           <ul>
+             <li><a href="#/">Home</a></li>
+             <li class="drop-down"><a href="">About Us</a>
+              <ul>
+               <li><a href="#about">Company Overview</a></li>
+               <li><a href="#execLeadership">Executive Leadership</a></li>
+               <li><a href="#vision">Vision,Mission & Values</a></li>
+               <li><a href="#">Careers</a></li>
+              </ul>
+             </li>
+             <li class="drop-down"><a href="">Solutions</a>
+              <ul>
+               <li><a href="#orcloud">Oracle Cloud Solution</a></li>
+               <li><a href="#erp">Oracle E-Business Suite(ERP)</a></li>
+               <li><a href="#bi">Business Intelligence(BI)</a></li>
+               <li><a href="#crm">CRM</a></li>
+               <li><a href="#">Hyperion(EPM)</a></li>
+              </ul>
+             </li>
+             <li class="drop-down"><a href="">Services</a>
+              <ul>
+               <li><a href="#or12">Oracle R12 Upgrade Services</a></li>
+               <li><a href="#implementation">Implementation</a></li>
+               <li><a href="#hc">Health Check & Audit Services</a></li>
+               <li><a href="#pm">Program Management</a></li>
+               <li><a href="#ms">Managed Services</a></li>
+               <li><a href="#train">Training</a></li>
+               
+              </ul>
+             </li>
+             <li class="drop-down"><a href="#team">Industries</a>
+              <ul>
+                <li><a href="#hci">Healthcare</a></li>
+                <li><a href="#banki">Banking</a></li>
+               </ul>
+            </li>
+             <li class="drop-down"><a href="">Insights</a>
+               <ul>
+                 <li><a href="#">Events</a></li>
+                 <li><a href="#">News</a></li>
+                 <li><a href="#">Photo Gallery</a></li>
+                 <li><a href="#">Blog</a></li>
+               </ul>
+             </li>
+             <li><a href="#clients">Our Clients</a></li>
+             <li><a href="#footer" ng-mouseup="moveFooter()">Contact us</a></li>
+           </ul>
+         </nav>
+         
+       </div>
+      </header>
+      <!-- ==========================================
+          NAV BAR DONT MOVE IT TO NG_INCLUDE DOESN'T 
+          WORK THAT WAY
+      -->
+
+
+
+
+  
+      <div ng-view></div>
+
+  
+  <div id="footer" ng-include='"views/footer.html"'></div>
+
+  <!-- <main id="main"> -->
+  
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <div id="preloader"></div>
+  
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/mobile-nav/mobile-nav.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="./controller/client.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+ 
+    
+</body>
+</html>
